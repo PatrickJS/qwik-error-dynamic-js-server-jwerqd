@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint"],
   rules: {
+    "no-debugger": "off",
     "qwik/no-use-visible-task": ["off"],
     // 'qwik/no-use-visible-task': ['warn'],
     "qwik/valid-lexical-scope": ["warn"],
