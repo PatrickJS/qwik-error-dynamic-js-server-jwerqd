@@ -5,14 +5,22 @@ export default component$(() => {
   return (
     <>
       <button
-        onClick$={$(() => {
+        // onClick$={$(() => {
+        //   console.log("server$");
+        //   const serverFn_0 = server$(() => {
+        //     debugger;
+        //     console.log("Hi from server");
+        //   });
+        //   serverFn_0();
+        // })}
+        onClick$={() => {
           console.log("server$");
           const serverFn_0 = server$(() => {
             debugger;
             console.log("Hi from server");
           });
           serverFn_0();
-        })}
+        }}
       >
         Say Hi! Not working in prod mode
       </button>
